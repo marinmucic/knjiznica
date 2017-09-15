@@ -1,0 +1,279 @@
+
+
+@import url("reset.css");
+html{
+	background-image:url("img9.jpg"); 
+	background-repeat:no-repeat;
+    background-size: cover;
+	opacity:1;
+	
+}
+
+body{
+	/*background-color:white;*/
+	margin:2em auto;
+	font-size:2em;
+    font-family: 'Abel', sans-serif;
+   /* font-family: 'Pacifico', cursive;*/
+  /* font-family: 'Dancing Script', cursive;*/
+   opacity:0.8;
+    
+}
+a{ text-decoration:none;}
+
+#wrap{
+	
+	border-top-left-radius:.5em;
+	border-top-right-radius:.5em;
+	padding:.5em;
+}
+
+.navbar{
+	border-top:solid 0.5px white;
+	border-bottom:solid 2px white;
+	padding:1em;
+    background:transparent;
+   /* background-image:url("img6.jpg");*/
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#wrap .container2{
+	display:flex;
+    flex-wrap:wrap-reverse;
+     
+}
+
+.col-9{
+	color:white;
+    padding:1em;
+    margin-left:1em;
+    margin-right:1em; 
+    width:600px;
+    flex-grow:1;
+    
+}
+.col-3{
+
+    width:600px; 
+    
+}
+
+
+.nav-collapse{
+	font-size:.7em;
+}
+.nav-collapse >ul > li{
+	display:inline-block;
+	
+	margin:0;
+	background:white;
+}
+.nav-collapse ul li a{
+	display:block;
+	padding:10px 15px;
+	color:black;
+}
+.nav-collapse ul ul{
+	
+	position:absolute;
+	background:white;
+}
+.nav-collapse ul ul{
+	display:none;
+}
+
+.nav-collapse>ul li:hover>ul{
+	display:block;
+}
+
+.nav-collapse>ul>li:nth-child(1){
+	border-top-left-radius:.5em;
+	border-bottom-left-radius:.5em;
+}
+.nav-collapse>ul>li:last-child{
+	border-top-right-radius:.5em;
+	border-bottom-right-radius:.5em;
+}
+.nav-collapse ul li:hover{
+	background:lavender;
+	color:blue;
+}
+a:hover{
+	text-decoration:underline;
+}
+.navbar-brand{
+  display:inline-block;
+  font-size:1.5em;
+  font-family: 'Dancing Script', cursive;
+  margin:.5em .5em 0 .5em;
+  color:white;
+}
+.navbar-brand:hover{
+  text-decoration:none;
+}
+.navbar-toggle{
+	display:none;
+}
+
+.col-3 a{
+	display:block;
+	/*border:0.5px solid lavender;*/
+	width:55%;
+	padding:1em;
+    color:white;	
+}
+.col-3 a span{
+	color:red;
+	padding:0.2em;
+}
+
+.col-3 form{
+	/*border:0.5px solid white;*/
+	border-radius:6px;
+	/*background:#141414;*/
+	color:black;
+    
+	
+}
+input[type="text"],input[type="password"],input[type="email"],input[type="textarea"]{
+	display:block;
+	padding:.7em;
+    border:none;
+    border-bottom: 1px solid white;
+    width:14em;
+    background: transparent;
+    color:white;
+    font-size:0.5em;
+    
+}
+
+select{
+    padding:1em;
+    margin:0em 0em 0em 1.2em;
+}
+
+legend{
+    color: white;
+    display:block;
+    padding-left:.5em; 
+}
+
+
+input[type="text"]:focus,input[type="password"]:focus,button[type="submit"]{
+   
+}
+/*
+input[type="text"]:focus{
+   opacity:1;
+} */
+
+input[placeholder="Enter email"]{
+   font-size:.7em;
+    color:white;
+}
+input[placeholder="Password"]{
+   font-size:.7em;
+    color:white;
+}
+
+button[type="submit"],input[type="submit"]{
+	display:block;
+	color:darkslategray;
+	padding:1em 2em;
+	margin-top:1em;
+    margin-left:1.2em; 
+    border:none;
+    border-radius:7px;
+    
+	
+}
+.col-3 legend{
+	
+	padding:.5em;
+}
+.col-3 fieldset{
+	padding:1em;
+	border-radius:3px;
+}
+
+
+#footer div{
+	padding:2em;
+	background:transparent;
+	color:white;
+    border-top:0.5px solid white; 
+   /* background-image: url(img6.jpg);*/
+}
+
+
+/* ALERT ************** ALERT ************ */
+
+.alert{
+    color:darkred;
+    font-size:0.7em;
+    display:block;
+    margin:0 0 0 1em; 
+    
+}
+.input-div{
+    
+    padding:0.5em 0.5em 0 0.5em;
+}
+.helper-span{
+    color:darkred;
+    font-size:0.7em;
+    display:block;
+    margin:0 0 0 1em; 
+}
+
+.success{
+    color:darkgreen;
+    padding: 1em;
+}
+label{color:white}
+
+/* MOBITELI ***************************/
+@media only screen and (max-device-width: 480px) and (orientation:portrait),only screen and (max-device-width:888px) and (orientation:landscape){
+    
+    
+        body{ 
+        /*float:none;*/
+        width:100%;
+    
+       } 
+    .nav-collapse>ul >li{
+        display:block;
+        border:1px solid #101010;
+        font-size:.5em; 
+    }
+    
+    .nav-collapse>ul >li:nth-child(1){
+    
+        border-radius:0px;
+    }
+    .nav-collapse>ul >li:nth-child(6){
+        
+        border-radius:0px;
+    }
+    
+    .nav-collapse>ul li:focus>ul{
+	display:block;
+    }
+    
+    .col-9,.col-3{
+        width:100%;
+        font-size:.5em;
+    }
+    .col-3 a{
+	display:block;
+	/*border:0.5px solid lavender;*/
+	width:55%;
+    color:#222;
+    font-size:1em;    
+    }
+    #footer{
+        font-size: .5em;
+    }
+}
